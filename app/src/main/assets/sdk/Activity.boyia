@@ -1,0 +1,18 @@
+class Activity {
+    prop contentView = null;
+   
+    // Life Cycle onCreate();
+    fun setContent(view) {
+        this.contentView = view;
+    }
+    
+    fun onCreate() {
+        if (this.contentView) {
+            this.contentView.draw();
+            this.contentView.commit();
+        }
+    }
+    
+    fun onDestroy() {
+    }
+}

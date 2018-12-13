@@ -1,0 +1,19 @@
+var true = 1, false = 0, null = 0;
+//var touchDown = 1, touchUp = 2, touchMove = 4;
+class Util {
+    fun log(info) {
+        BY_Log(info);
+    }
+    
+    fun json(info) {
+        BY_Json(info);
+    }
+    
+    fun instanceof(obj, cls) {
+        BY_InstanceOfClass(obj, cls);
+    }
+    
+    fun showToast(info) {
+        BY_CallStaticMethod("com/boyia/app/utils/BoyiaUtils", "showToast", "(Ljava/lang/String;)V", info);
+    }
+}
